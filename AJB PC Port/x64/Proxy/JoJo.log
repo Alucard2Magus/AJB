@@ -1,0 +1,438 @@
+﻿  ProxyTypes.cpp
+  FileSystem.cpp
+  Logger.cpp
+  NTSurfer.cpp
+  CommandLineArgs.cpp
+  CMLA.cpp
+  Global.cpp
+  Hooks.cpp
+  AJB.cpp
+  ServerLogic.cpp
+  PairMode.cpp
+  Offsets.cpp
+  ProxyEntry.cpp
+  BytePatcher.cpp
+  Pointers.cpp
+  UFunctions.cpp
+  UnrealTypes.cpp
+  dllmain.cpp
+  BP_GlobalPatcher_functions.cpp
+  GM_AJBUserInterface_functions.cpp
+  LemonHelper_functions.cpp
+  WBP_AJBTitleScreen_functions.cpp
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Aeyth8\A8CL\NTSurfer\NTSurfer.hpp(824,17): warning C4312: 'reinterpret_cast': conversion from 'const dword' to 'NTS::KUSER_SHARED_DATA *' of greater size
+  (compiling source file 'Aeyth8/A8CL/NTSurfer/NTSurfer.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Aeyth8\A8CL\NTSurfer\NTSurfer.hpp(824,17): warning C4312: 'reinterpret_cast': conversion from 'const dword' to 'NTS::KUSER_SHARED_DATA *' of greater size
+  (compiling source file 'Aeyth8/A8CL/Logger/Logger.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Aeyth8\A8CL\NTSurfer\NTSurfer.hpp(824,17): warning C4312: 'reinterpret_cast': conversion from 'const dword' to 'NTS::KUSER_SHARED_DATA *' of greater size
+  (compiling source file 'Aeyth8/A8CL/Filesystem/FileSystem.cpp')
+  
+  WBP_CallbackTimerHandler_functions.cpp
+  WBP_OptionsMenu_functions.cpp
+  WBP_TLVersionInfo_functions.cpp
+  AJBCreadit_functions.cpp
+  AkAudio_functions.cpp
+  BF_GameFlowStateUtils_functions.cpp
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Aeyth8\CmdArgs\Core\CMLA.cpp(43,50): warning C4244: '=': conversion from '__int64' to 'uint16', possible loss of data
+  BPF_AJBOutGameHUD_functions.cpp
+  BP_AJBBattleGameMode_functions.cpp
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4309: 'initializing': truncation of constant value
+  (compiling source file 'Dumper-7/CustomSDK/BP_GlobalPatcher_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4369: 'SDK::EAJBRewardReceivingStatus::EAJBRewardReceivingStatus_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+  (compiling source file 'Dumper-7/CustomSDK/BP_GlobalPatcher_functions.cpp')
+  
+  BP_AJBBattleGameState_functions.cpp
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4309: 'initializing': truncation of constant value
+  (compiling source file 'Aeyth8/Logic/PairMode.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4369: 'SDK::EAJBRewardReceivingStatus::EAJBRewardReceivingStatus_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+  (compiling source file 'Aeyth8/Logic/PairMode.cpp')
+  
+  BP_AJBDamageAreaLocal_functions.cpp
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Aeyth8\Hooks\Hooks.cpp(91,32): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Aeyth8\Hooks\Hooks.cpp(113,32): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Aeyth8\Hooks\Hooks.cpp(134,32): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Aeyth8\Hooks\Hooks.cpp(155,32): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Aeyth8\Hooks\Hooks.cpp(181,32): warning C4267: 'argument': conversion from 'size_t' to 'const int', possible loss of data
+  BP_AJBHighlightPlayerController_functions.cpp
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4309: 'initializing': truncation of constant value
+  (compiling source file 'Dumper-7/SDK/BP_AJBBattleGameMode_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4369: 'SDK::EAJBRewardReceivingStatus::EAJBRewardReceivingStatus_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+  (compiling source file 'Dumper-7/SDK/BP_AJBBattleGameMode_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Aeyth8\Tools\Pointers.h(57,3): warning C4369: 'A8CL::AllocatedInSharedPage':  enumerator value '2147483648' cannot be represented as 'int', value is '2147483648'
+  (compiling source file 'Aeyth8/Tools/Pointers.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Aeyth8\Tools\Pointers.h(57,3): warning C4369: 'A8CL::AllocatedInSharedPage':  enumerator value '2147483648' cannot be represented as 'int', value is '2147483648'
+  (compiling source file 'Aeyth8/Tools/UFunctions.cpp')
+  
+  BP_AJBInGameCharacter_functions.cpp
+  BP_AJBInGameHUD_functions.cpp
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AkAudio_structs.hpp(265,2): warning C4309: 'initializing': truncation of constant value
+  (compiling source file 'Dumper-7/SDK/AkAudio_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AkAudio_structs.hpp(265,2): warning C4369: 'SDK::EAkMidiEventType::EAkMidiEventType_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+  (compiling source file 'Dumper-7/SDK/AkAudio_functions.cpp')
+  
+  BP_AJBInGameItemSpawnerMaster_functions.cpp
+  BP_AJBInGamePlayerController_functions.cpp
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Aeyth8\Tools\Pointers.h(57,3): warning C4369: 'A8CL::AllocatedInSharedPage':  enumerator value '2147483648' cannot be represented as 'int', value is '2147483648'
+  (compiling source file 'dllmain.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4309: 'initializing': truncation of constant value
+  (compiling source file 'Aeyth8/Tools/UFunctions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4369: 'SDK::EAJBRewardReceivingStatus::EAJBRewardReceivingStatus_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+  (compiling source file 'Aeyth8/Tools/UFunctions.cpp')
+  
+  BP_AJBOutGameHUD_functions.cpp
+  BP_AJBOutGamePlayerController_functions.cpp
+  BP_AJBOutGameProxy_functions.cpp
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Aeyth8\Tools\Pointers.h(57,3): warning C4369: 'A8CL::AllocatedInSharedPage':  enumerator value '2147483648' cannot be represented as 'int', value is '2147483648'
+  (compiling source file 'Aeyth8/Logic/AJB.cpp')
+  
+  BP_AJBPlacementSkill_functions.cpp
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4309: 'initializing': truncation of constant value
+  (compiling source file 'Dumper-7/SDK/BP_AJBBattleGameState_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4369: 'SDK::EAJBRewardReceivingStatus::EAJBRewardReceivingStatus_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+  (compiling source file 'Dumper-7/SDK/BP_AJBBattleGameState_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4309: 'initializing': truncation of constant value
+  (compiling source file 'Aeyth8/Logic/AJB.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4369: 'SDK::EAJBRewardReceivingStatus::EAJBRewardReceivingStatus_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+  (compiling source file 'Aeyth8/Logic/AJB.cpp')
+  
+  BP_AJBSimpleMatchHUD_functions.cpp
+  BP_AJBSimpleMatchPlayerController_functions.cpp
+  BP_AJBUIMapManager_functions.cpp
+  BP_GameFlowStateManager_functions.cpp
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AkAudio_structs.hpp(265,2): warning C4309: 'initializing': truncation of constant value
+  (compiling source file 'Aeyth8/Tools/UFunctions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AkAudio_structs.hpp(265,2): warning C4369: 'SDK::EAkMidiEventType::EAkMidiEventType_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+  (compiling source file 'Aeyth8/Tools/UFunctions.cpp')
+  
+  BP_HUDCountDownTimerWrapper_functions.cpp
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4309: 'initializing': truncation of constant value
+  (compiling source file 'Dumper-7/SDK/BP_AJBHighlightPlayerController_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4369: 'SDK::EAJBRewardReceivingStatus::EAJBRewardReceivingStatus_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+  (compiling source file 'Dumper-7/SDK/BP_AJBHighlightPlayerController_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AkAudio_structs.hpp(265,2): warning C4309: 'initializing': truncation of constant value
+  (compiling source file 'Aeyth8/Logic/AJB.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AkAudio_structs.hpp(265,2): warning C4369: 'SDK::EAkMidiEventType::EAkMidiEventType_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+  (compiling source file 'Aeyth8/Logic/AJB.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4309: 'initializing': truncation of constant value
+  (compiling source file 'Dumper-7/SDK/BP_AJBDamageAreaLocal_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4369: 'SDK::EAJBRewardReceivingStatus::EAJBRewardReceivingStatus_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+  (compiling source file 'Dumper-7/SDK/BP_AJBDamageAreaLocal_functions.cpp')
+  
+  BP_PPV_VSFilter_functions.cpp
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4309: 'initializing': truncation of constant value
+  (compiling source file 'Dumper-7/SDK/BP_AJBInGameCharacter_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4369: 'SDK::EAJBRewardReceivingStatus::EAJBRewardReceivingStatus_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+  (compiling source file 'Dumper-7/SDK/BP_AJBInGameCharacter_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4309: 'initializing': truncation of constant value
+  (compiling source file 'Dumper-7/SDK/BP_AJBInGameHUD_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4369: 'SDK::EAJBRewardReceivingStatus::EAJBRewardReceivingStatus_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+  (compiling source file 'Dumper-7/SDK/BP_AJBInGameHUD_functions.cpp')
+  
+  CoreUObject_functions.cpp
+E:\Visual Studio 2022\VC\Tools\MSVC\14.44.35207\include\xutility(4829,18): warning C4244: '=': conversion from 'wchar_t' to 'char', possible loss of data
+  (compiling source file 'Aeyth8/Logic/PairMode.cpp')
+      E:\Visual Studio 2022\VC\Tools\MSVC\14.44.35207\include\xutility(4829,18):
+      the template instantiation context (the oldest one first) is
+          C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Aeyth8\Logic\PairMode.cpp(28,23):
+          see reference to function template instantiation 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,0>(_Iter,_Iter,const _Alloc &)' being compiled
+          with
+          [
+              _Elem=wchar_t,
+              _Iter=std::_String_iterator<std::_String_val<std::_Simple_types<wchar_t>>>,
+              _Alloc=std::allocator<char>
+          ]
+              C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Aeyth8\Logic\PairMode.cpp(28,5):
+              see the first reference to 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string' in 'WtoA'
+          E:\Visual Studio 2022\VC\Tools\MSVC\14.44.35207\include\xstring(788,17):
+          see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct_from_iter<wchar_t*,wchar_t*,_Size_type>(_Iter,const _Sent,_Size)' being compiled
+          with
+          [
+              _Size_type=unsigned __int64,
+              _Iter=wchar_t *,
+              _Sent=wchar_t *,
+              _Size=unsigned __int64
+          ]
+          E:\Visual Studio 2022\VC\Tools\MSVC\14.44.35207\include\xstring(944,18):
+          see reference to function template instantiation '_OutIt *std::_Copy_n_unchecked4<wchar_t*,_Size,char*>(_InIt,_SizeTy,_OutIt)' being compiled
+          with
+          [
+              _OutIt=char *,
+              _Size=unsigned __int64,
+              _InIt=wchar_t *,
+              _SizeTy=unsigned __int64
+          ]
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4309: 'initializing': truncation of constant value
+  (compiling source file 'Dumper-7/SDK/BP_AJBInGamePlayerController_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4369: 'SDK::EAJBRewardReceivingStatus::EAJBRewardReceivingStatus_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+  (compiling source file 'Dumper-7/SDK/BP_AJBInGamePlayerController_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4309: 'initializing': truncation of constant value
+  (compiling source file 'Dumper-7/SDK/BP_AJBOutGameHUD_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4369: 'SDK::EAJBRewardReceivingStatus::EAJBRewardReceivingStatus_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+  (compiling source file 'Dumper-7/SDK/BP_AJBOutGameHUD_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4309: 'initializing': truncation of constant value
+  (compiling source file 'Dumper-7/SDK/BP_AJBOutGameProxy_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4369: 'SDK::EAJBRewardReceivingStatus::EAJBRewardReceivingStatus_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+  (compiling source file 'Dumper-7/SDK/BP_AJBOutGameProxy_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4309: 'initializing': truncation of constant value
+  (compiling source file 'Dumper-7/SDK/BP_AJBOutGamePlayerController_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4369: 'SDK::EAJBRewardReceivingStatus::EAJBRewardReceivingStatus_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+  (compiling source file 'Dumper-7/SDK/BP_AJBOutGamePlayerController_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4309: 'initializing': truncation of constant value
+  (compiling source file 'Dumper-7/SDK/BP_AJBSimpleMatchHUD_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4369: 'SDK::EAJBRewardReceivingStatus::EAJBRewardReceivingStatus_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+  (compiling source file 'Dumper-7/SDK/BP_AJBSimpleMatchHUD_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4309: 'initializing': truncation of constant value
+  (compiling source file 'Dumper-7/SDK/BP_AJBPlacementSkill_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4369: 'SDK::EAJBRewardReceivingStatus::EAJBRewardReceivingStatus_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+  (compiling source file 'Dumper-7/SDK/BP_AJBPlacementSkill_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4309: 'initializing': truncation of constant value
+  (compiling source file 'Dumper-7/SDK/BP_AJBSimpleMatchPlayerController_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4369: 'SDK::EAJBRewardReceivingStatus::EAJBRewardReceivingStatus_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+  (compiling source file 'Dumper-7/SDK/BP_AJBSimpleMatchPlayerController_functions.cpp')
+  
+  Engine_functions.cpp
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4309: 'initializing': truncation of constant value
+  (compiling source file 'Dumper-7/SDK/BP_AJBUIMapManager_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4369: 'SDK::EAJBRewardReceivingStatus::EAJBRewardReceivingStatus_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+  (compiling source file 'Dumper-7/SDK/BP_AJBUIMapManager_functions.cpp')
+  
+  FlowState_functions.cpp
+  Landscape_functions.cpp
+E:\Visual Studio 2022\VC\Tools\MSVC\14.44.35207\include\xutility(4829,18): warning C4244: '=': conversion from 'wchar_t' to 'char', possible loss of data
+  (compiling source file 'Aeyth8/Tools/UFunctions.cpp')
+      E:\Visual Studio 2022\VC\Tools\MSVC\14.44.35207\include\xutility(4829,18):
+      the template instantiation context (the oldest one first) is
+          C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Aeyth8\Tools\UFunctions.cpp(1429,173):
+          see reference to function template instantiation 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string<std::_String_iterator<std::_String_val<std::_Simple_types<_Elem>>>,0>(_Iter,_Iter,const _Alloc &)' being compiled
+          with
+          [
+              _Elem=wchar_t,
+              _Iter=std::_String_iterator<std::_String_val<std::_Simple_types<wchar_t>>>,
+              _Alloc=std::allocator<char>
+          ]
+              C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Aeyth8\Tools\UFunctions.cpp(1429,6):
+              see the first reference to 'std::basic_string<char,std::char_traits<char>,std::allocator<char>>::basic_string' in 'A8CL::UFunctions::SetClientTravel'
+          E:\Visual Studio 2022\VC\Tools\MSVC\14.44.35207\include\xstring(788,17):
+          see reference to function template instantiation 'void std::basic_string<char,std::char_traits<char>,std::allocator<char>>::_Construct_from_iter<wchar_t*,wchar_t*,_Size_type>(_Iter,const _Sent,_Size)' being compiled
+          with
+          [
+              _Size_type=unsigned __int64,
+              _Iter=wchar_t *,
+              _Sent=wchar_t *,
+              _Size=unsigned __int64
+          ]
+          E:\Visual Studio 2022\VC\Tools\MSVC\14.44.35207\include\xstring(944,18):
+          see reference to function template instantiation '_OutIt *std::_Copy_n_unchecked4<wchar_t*,_Size,char*>(_InIt,_SizeTy,_OutIt)' being compiled
+          with
+          [
+              _OutIt=char *,
+              _Size=unsigned __int64,
+              _InIt=wchar_t *,
+              _SizeTy=unsigned __int64
+          ]
+  
+  LoadingScreenSystem_functions.cpp
+  MediaAssets_functions.cpp
+  WB_Credit_functions.cpp
+  WB_DBISequencerSkipper_functions.cpp
+  WB_Fade_functions.cpp
+  WB_InGameMain_functions.cpp
+  WB_ModeSelectButtonBase_functions.cpp
+  WB_ModeSelect_Button_PvE_functions.cpp
+  WB_ModeSelect_Button_SOLO_functions.cpp
+  WB_ModeSelect_functions.cpp
+  WB_PpBuyWindow_functions.cpp
+  WB_TestModeMenuBase_functions.cpp
+  WB_TestModePage_functions.cpp
+  WB_TimeLimitCountDown_functions.cpp
+  WB_TournamentMode_Main_functions.cpp
+  WB_Training_functions.cpp
+  LogImports.cpp
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Aeyth8\A8CL\NTSurfer\NTSurfer.hpp(824,17): warning C4312: 'reinterpret_cast': conversion from 'const dword' to 'NTS::KUSER_SHARED_DATA *' of greater size
+  (compiling source file 'LogImports.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\winnt.h(1479,9): warning C4005: 'CONTAINING_RECORD': macro redefinition
+  (compiling source file 'LogImports.cpp')
+      C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Aeyth8\A8CL\NTSurfer\NTSurfer.hpp(64,10):
+      see previous definition of 'CONTAINING_RECORD'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\winnt.h(14315,9): warning C4005: 'MAXIMUM_XSTATE_FEATURES': macro redefinition
+  (compiling source file 'LogImports.cpp')
+      C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Aeyth8\A8CL\NTSurfer\NTSurfer.hpp(24,17):
+      see previous definition of 'MAXIMUM_XSTATE_FEATURES'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\stddef.h(52,13): warning C4005: 'offsetof': macro redefinition
+  (compiling source file 'LogImports.cpp')
+      C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Aeyth8\A8CL\NTSurfer\NTSurfer.hpp(60,10):
+      see previous definition of 'offsetof'
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4309: 'initializing': truncation of constant value
+  (compiling source file 'Dumper-7/SDK/WB_Credit_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4369: 'SDK::EAJBRewardReceivingStatus::EAJBRewardReceivingStatus_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+  (compiling source file 'Dumper-7/SDK/WB_Credit_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4309: 'initializing': truncation of constant value
+  (compiling source file 'Dumper-7/SDK/WB_InGameMain_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4369: 'SDK::EAJBRewardReceivingStatus::EAJBRewardReceivingStatus_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+  (compiling source file 'Dumper-7/SDK/WB_InGameMain_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4309: 'initializing': truncation of constant value
+  (compiling source file 'Dumper-7/SDK/WB_Fade_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4369: 'SDK::EAJBRewardReceivingStatus::EAJBRewardReceivingStatus_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+  (compiling source file 'Dumper-7/SDK/WB_Fade_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4309: 'initializing': truncation of constant value
+  (compiling source file 'Dumper-7/SDK/WB_ModeSelect_Button_PvE_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4369: 'SDK::EAJBRewardReceivingStatus::EAJBRewardReceivingStatus_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+  (compiling source file 'Dumper-7/SDK/WB_ModeSelect_Button_PvE_functions.cpp')
+  
+  AJB_functions.cpp
+  AmwPlugin_functions.cpp
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4309: 'initializing': truncation of constant value
+  (compiling source file 'Dumper-7/SDK/WB_ModeSelectButtonBase_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4369: 'SDK::EAJBRewardReceivingStatus::EAJBRewardReceivingStatus_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+  (compiling source file 'Dumper-7/SDK/WB_ModeSelectButtonBase_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4309: 'initializing': truncation of constant value
+  (compiling source file 'Dumper-7/SDK/WB_ModeSelect_Button_SOLO_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4369: 'SDK::EAJBRewardReceivingStatus::EAJBRewardReceivingStatus_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+  (compiling source file 'Dumper-7/SDK/WB_ModeSelect_Button_SOLO_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4309: 'initializing': truncation of constant value
+  (compiling source file 'Dumper-7/SDK/WB_PpBuyWindow_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4369: 'SDK::EAJBRewardReceivingStatus::EAJBRewardReceivingStatus_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+  (compiling source file 'Dumper-7/SDK/WB_PpBuyWindow_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4309: 'initializing': truncation of constant value
+  (compiling source file 'Dumper-7/SDK/WB_ModeSelect_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4369: 'SDK::EAJBRewardReceivingStatus::EAJBRewardReceivingStatus_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+  (compiling source file 'Dumper-7/SDK/WB_ModeSelect_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4309: 'initializing': truncation of constant value
+  (compiling source file 'Dumper-7/SDK/WB_TestModePage_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4369: 'SDK::EAJBRewardReceivingStatus::EAJBRewardReceivingStatus_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+  (compiling source file 'Dumper-7/SDK/WB_TestModePage_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4309: 'initializing': truncation of constant value
+  (compiling source file 'Dumper-7/SDK/WB_TestModeMenuBase_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4369: 'SDK::EAJBRewardReceivingStatus::EAJBRewardReceivingStatus_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+  (compiling source file 'Dumper-7/SDK/WB_TestModeMenuBase_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4309: 'initializing': truncation of constant value
+  (compiling source file 'Dumper-7/SDK/WB_TournamentMode_Main_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4369: 'SDK::EAJBRewardReceivingStatus::EAJBRewardReceivingStatus_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+  (compiling source file 'Dumper-7/SDK/WB_TournamentMode_Main_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4309: 'initializing': truncation of constant value
+  (compiling source file 'Dumper-7/SDK/WB_Training_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4369: 'SDK::EAJBRewardReceivingStatus::EAJBRewardReceivingStatus_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+  (compiling source file 'Dumper-7/SDK/WB_Training_functions.cpp')
+  
+  Basic.cpp
+  BPF_AJBGameInstance_functions.cpp
+  BPF_AJBWwiseFunctionLibrary_functions.cpp
+  BP_AJBGameInstance_functions.cpp
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4309: 'initializing': truncation of constant value
+  (compiling source file 'Dumper-7/SDK/AJB_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4369: 'SDK::EAJBRewardReceivingStatus::EAJBRewardReceivingStatus_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+  (compiling source file 'Dumper-7/SDK/AJB_functions.cpp')
+  
+  BP_AJBWwiseManager_functions.cpp
+  OnlineSubsystemUtils_functions.cpp
+  OnlineSubsystem_functions.cpp
+  UMG_functions.cpp
+  SteamInputTest.cpp
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Aeyth8\A8CL\NTSurfer\NTSurfer.hpp(824,17): warning C4312: 'reinterpret_cast': conversion from 'const dword' to 'NTS::KUSER_SHARED_DATA *' of greater size
+  (compiling source file 'SteamInputTest.cpp')
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\winnt.h(1479,9): warning C4005: 'CONTAINING_RECORD': macro redefinition
+  (compiling source file 'SteamInputTest.cpp')
+      C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Aeyth8\A8CL\NTSurfer\NTSurfer.hpp(64,10):
+      see previous definition of 'CONTAINING_RECORD'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\um\winnt.h(14315,9): warning C4005: 'MAXIMUM_XSTATE_FEATURES': macro redefinition
+  (compiling source file 'SteamInputTest.cpp')
+      C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Aeyth8\A8CL\NTSurfer\NTSurfer.hpp(24,17):
+      see previous definition of 'MAXIMUM_XSTATE_FEATURES'
+  
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.26100.0\ucrt\stddef.h(52,13): warning C4005: 'offsetof': macro redefinition
+  (compiling source file 'SteamInputTest.cpp')
+      C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Aeyth8\A8CL\NTSurfer\NTSurfer.hpp(60,10):
+      see previous definition of 'offsetof'
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4309: 'initializing': truncation of constant value
+  (compiling source file 'Dumper-7/SDK/BP_AJBGameInstance_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4369: 'SDK::EAJBRewardReceivingStatus::EAJBRewardReceivingStatus_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+  (compiling source file 'Dumper-7/SDK/BP_AJBGameInstance_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4309: 'initializing': truncation of constant value
+  (compiling source file 'Dumper-7/SDK/BPF_AJBGameInstance_functions.cpp')
+  
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Dumper-7\SDK\AJB_structs.hpp(145,2): warning C4369: 'SDK::EAJBRewardReceivingStatus::EAJBRewardReceivingStatus_MAX':  enumerator value '256' cannot be represented as 'unsigned char', value is '256'
+  (compiling source file 'Dumper-7/SDK/BPF_AJBGameInstance_functions.cpp')
+  
+  Proxy.cpp
+  buffer.c
+  hde32.c
+  hde64.c
+  hook.c
+  trampoline.c
+     Creating library C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\x64\Proxy\dxgi.lib and object C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\x64\Proxy\dxgi.exp
+  Generating code
+C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\Aeyth8\Global.hpp(48): warning C4172: returning address of local variable or temporary : Address
+  4047 of 4084 functions (99.1%) were compiled, the rest were copied from previous compilation.
+    169 functions were new in current compilation
+    2 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  JoJo.vcxproj -> C:\Users\jesse\Downloads\eeerererereers\v33_pairtest1_bugfixed\v33_pairtest1(chine)\x64\Proxy\dxgi.dll

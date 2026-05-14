@@ -7,7 +7,8 @@ using namespace A8CL;
 using namespace Global;
 
 // ============================================================
-// Helpers
+// Helpers 
+// Claude Opus
 // ============================================================
 
 static void SetFString(UC::FString* Dst, const wchar_t* Src)
