@@ -619,11 +619,16 @@ void AJB::Init_Hooks()
 	
 }
 
+extern void InjectSteamInput();
+
 void AJB::Init_Engine()
 {
 	while (!GEngine) Sleep(25);
 
 	//MRWT::Activate();
+
+	
+	//InjectSteamInput();
 
 	*reinterpret_cast<byte*>(PB(OFF::LogVerbosity)) = 6u;
 

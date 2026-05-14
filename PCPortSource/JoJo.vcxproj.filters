@@ -377,6 +377,12 @@
     <ClCompile Include="LogImports.cpp">
       <Filter>Aeyth8\A8CL</Filter>
     </ClCompile>
+    <ClCompile Include="SteamInputTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Dumper-7\SDK\BP_AJBPlacementSkill_functions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Aeyth8\Logger.hpp">

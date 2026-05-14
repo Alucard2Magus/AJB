@@ -1,0 +1,146 @@
+#pragma once
+#include "OffsetBase.h"
+
+class OFFSET;
+
+namespace SDK
+{
+	class UWorld;
+	class UEngine;
+}
+namespace A8CL
+{
+	namespace OFF
+	{
+		// Basic UE Functions
+
+		extern OFFSET GEngine;
+		extern OFFSET GWorld;
+
+		extern OFFSET FMalloc;
+		extern OFFSET FRealloc;
+		extern OFFSET FFree;
+		extern OFFSET FNameW;
+		extern OFFSET FNameA;
+		//extern OFFSET Logf;
+		extern OFFSET OutputText;
+
+		extern OFFSET ProcessEvent;
+		extern OFFSET Invoke;
+		extern OFFSET AppPreExit;
+
+		extern OFFSET SetClientTravel;
+		extern OFFSET ClientTravelInternal;
+		extern OFFSET StartLoadingDestination;
+		extern OFFSET PreLogin;
+		extern OFFSET AJBPreLogin;
+		extern OFFSET Login;
+		extern OFFSET PostLogin;
+		extern OFFSET Logout;
+		extern OFFSET BeginPlay;
+		extern OFFSET HandleStartingNewPlayer;
+
+		extern OFFSET InitListen;
+		extern OFFSET InitLocalConnection;
+		extern OFFSET NotifyControlMessage;
+
+		extern OFFSET Close;
+
+		extern OFFSET UConsole;	
+		extern OFFSET ConsoleCommand;
+		extern OFFSET Browse;
+		extern OFFSET RequestLevel;
+		extern OFFSET PrepareMapChange;
+		extern OFFSET IsTimeLimitedExceeded;
+		extern OFFSET AddToWorld;
+		extern OFFSET RemoveFromWorld;
+		extern OFFSET SpawnActor;
+		extern OFFSET DestroyActor;
+		extern OFFSET ProcessMulticastDelegate;
+
+		extern OFFSET ClientTeamMessage;
+		extern OFFSET ClientTeamMessageImplementation;
+
+		extern OFFSET ActorDestroy;
+		extern OFFSET CopyString;
+
+		extern OFFSET IsNonPakFileNameAllowed;
+		extern OFFSET FindFileInPakFiles;
+		extern OFFSET StaticLoadClass;
+		extern OFFSET StaticFindObject;
+		extern OFFSET StaticLoadObject;
+		extern OFFSET CreateDefaultObject;
+		extern OFFSET StaticConstructObject;
+		extern OFFSET BroadcastDelegate;
+
+		extern OFFSET ALevelScriptActorConstructor;
+		extern OFFSET ToFormattedString;
+
+		extern OFFSET SetInputGameOnly;
+		extern OFFSET SetInputMode_GameAndUIEx;
+
+		// Native Game Functions
+
+		extern OFFSET PostEventAtLocation;
+		extern OFFSET ChangeState;
+		extern OFFSET TryGetMatchingMyPairInfo;
+		extern OFFSET TryGetMatchingPlayerInfo;
+		extern OFFSET GetUsername;
+		extern OFFSET GetNationalMatchSchedule;
+		extern OFFSET AJBWindowWidget;
+
+		extern OFFSET IsTenpoHost;
+		extern OFFSET IsAJBOfflineMode;
+		extern OFFSET IsOfflineMode;
+
+		// Byte Patches
+
+		constexpr ull HideCursorCaller			= 0x04A10F0;
+		constexpr ull AJBGetMaxTickRate			= 0x13D2D53;
+		constexpr ull AJBGetMaxTickRateCap		= 0x13D2DE8;
+		constexpr ull ResetPP					= 0x0484420;
+		constexpr ull StartConsumePP			= 0x05282A0;
+		constexpr ull LogVerbosity				= 0x3017348;
+		constexpr ull NetDriverGetNetMode		= 0x14FF300;
+		constexpr ull WorldInternalGetNetMode	= 0x17CAA30;
+		constexpr ull ActorInternalGetNetMode	= 0x11C07D0;
+	}
+
+
+	// Designed to automatically get and set global pointer variables obtained by offsets so that the syntax is equivalent to the original source (when it isn't)
+	template <class Class, OFFSET& Offset>
+	struct GPointerWrapper
+	{
+		inline static Class* GPointer{nullptr};
+
+		inline bool IsInitialized() const
+		{
+			return this->GPointer != nullptr;
+		}
+
+		inline Class* GetPointer() const
+		{
+			return this->GPointer = *reinterpret_cast<Class**>(Offset.PlusBase());
+		}
+
+		inline Class* operator->() const
+		{
+			return this->IsInitialized() ? this->GPointer : this->GetPointer();
+		}
+
+		inline operator Class* () const
+		{
+			return this->IsInitialized() ? this->GPointer : this->GetPointer();
+		}
+
+		inline Class* operator&() const
+		{
+			return this->GetPointer();
+		}
+
+
+	};
+
+	inline static GPointerWrapper<SDK::UEngine, OFF::GEngine> GEngine;
+	inline static GPointerWrapper<SDK::UWorld, OFF::GWorld> GWorld;
+}

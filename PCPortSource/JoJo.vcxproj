@@ -248,6 +248,7 @@
     <ClCompile Include="Dumper-7\SDK\BP_AJBOutGameHUD_functions.cpp" />
     <ClCompile Include="Dumper-7\SDK\BP_AJBOutGamePlayerController_functions.cpp" />
     <ClCompile Include="Dumper-7\SDK\BP_AJBOutGameProxy_functions.cpp" />
+    <ClCompile Include="Dumper-7\SDK\BP_AJBPlacementSkill_functions.cpp" />
     <ClCompile Include="Dumper-7\SDK\BP_AJBSimpleMatchHUD_functions.cpp" />
     <ClCompile Include="Dumper-7\SDK\BP_AJBSimpleMatchPlayerController_functions.cpp" />
     <ClCompile Include="Dumper-7\SDK\BP_AJBUIMapManager_functions.cpp" />
@@ -330,6 +331,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Proxy|x64'">NotUsing</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Injectable|x64'">NotUsing</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="SteamInputTest.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Version\JoJo.rc">

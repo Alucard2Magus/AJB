@@ -11,10 +11,16 @@
 
 #include "../CmdArgs/CommandLineArgs.h"
 #include "../Tools/UnrealTypes.h"
+// my stuff 
+#include "../../Dumper-7/SDK/BP_AJBInGameSeparateStand_classes.hpp"
+#include "../../Dumper-7/SDK/BP_AJBSeparateSkill_classes.hpp"
+#include "../../Dumper-7/SDK/BP_AJBCloseRangeSkill_classes.hpp"
+#include "../../Dumper-7/SDK/BP_AJBPlacementSkill_classes.hpp"
+#include <vector>
 
 /*
 
-Written by Aeyth8
+Written by Aeyth8 Cheats by Aeyth11
 
 https://github.com/Aeyth8
 
@@ -484,11 +490,11 @@ SDK::FString* UFunctions::ConsoleCommand(SDK::APlayerController* This, SDK::FStr
 	else if (StrCommand.find("AJBExecInternal PlayBG") == 0) // Hardcoding this until I finish my console command parser (but this is a bad practice)
 	{
 		SDK::ABP_AJBWwiseManager_C* Manager = Pointers::SpawnActor<SDK::ABP_AJBWwiseManager_C>();
-		
+
 		Manager->PostWwiseBGMEvent(SDK::FGameplayTag{FName::NAME_FindOrAdd(StrCommand.substr(23).c_str())}, true);
 		ConsoleOutput::Text(L"Playing soundtrack " + Command->ToWString().substr(23));
 		return OFF::ConsoleCommand.VerifyFC<Decl::ConsoleCommand>()(This, Result, Command, false);
-	}	
+	}
 	else if (StrCommand.find("AJBExecInternal TempFix") == 0)
 	{
 		if (AJB::IsServer())
@@ -985,8 +991,8 @@ SDK::FString* UFunctions::ConsoleCommand(SDK::APlayerController* This, SDK::FStr
 	/*else if (StrCommand == "fix")
 	{
 		AJB::TEMP_FixMatchingPlayers();
-	}
-	*/else if (StrCommand.find("rce") != std::string::npos && StrCommand.size() > 5)
+	}*/
+	else if (StrCommand.find("rce") != std::string::npos && StrCommand.size() > 5)
 	{
 		SDK::AAJBInGamePlayerController* Player = (SDK::AAJBInGamePlayerController*)Pointers::Player();
 		if (Player)
@@ -996,7 +1002,7 @@ SDK::FString* UFunctions::ConsoleCommand(SDK::APlayerController* This, SDK::FStr
 			Player->ServerCmd(RemoteCommand.c_str());
 		}
 	}
-	else if (StrCommand == "endgame")
+	/*else if (StrCommand == "endgame")
 	{
 		SDK::AAJBInGamePlayerController* Player = Pointers::Player<SDK::AAJBInGamePlayerController>();
 		if (Player)
@@ -1004,7 +1010,7 @@ SDK::FString* UFunctions::ConsoleCommand(SDK::APlayerController* This, SDK::FStr
 			ConsoleOutput::Text(L"Ending game..");
 			Player->OnDebugLastSurvivor();
 		}
-	}
+	}*/
 	else if (StrCommand == "ajbdebug")
 	{
 		SDK::ABP_AJBInGameHUD_C* HUD = reinterpret_cast<SDK::ABP_AJBInGameHUD_C*>(Pointers::Player()->MyHUD);
@@ -1016,33 +1022,6 @@ SDK::FString* UFunctions::ConsoleCommand(SDK::APlayerController* This, SDK::FStr
 			HUD->bIsDebugHUD = bToggle;
 		}
 	}
-	/*else if (StrCommand == "trymenu")
-	{
-		SDK::ABP_AJBInGameHUD_C* HUD = reinterpret_cast<SDK::ABP_AJBInGameHUD_C*>(Pointers::Player()->MyHUD);
-		if (HUD)
-		{
-			HUD->TryCreateDebugOnlyMenu();
-			HUD->OnShowDebugMenu();
-		}
-	}
-	else if (StrCommand == "camera")
-	{
-		SDK::ABP_AJBInGameCharacter_C* Character = static_cast<SDK::ABP_AJBInGameCharacter_C*>(Pointers::Player()->Character);
-		if (Character)
-		{
-			struct FST_CameraParam
-			{
-				SDK::FVector	SpringArmOffset;
-				float			TargetArmLength;
-				float			InterpSpeed;
-				float			FOV;
-			};
-
-			FST_CameraParam NewParms{SDK::FVector(0.0f, 0.0f, 50.0f), 300.0f, 10.0f, 90.0f};
-
-			Character->DesiredCameraParam = *(SDK::FST_CameraParam*)&NewParms;
-		}
-	}*/
 	else if (StrCommand == "fly")
 	{
 		static bool bToggle{0};
@@ -1057,49 +1036,142 @@ SDK::FString* UFunctions::ConsoleCommand(SDK::APlayerController* This, SDK::FStr
 		bToggle ? ConsoleOutput::Text(L"Flying activated") : ConsoleOutput::Text(L"Flying deactivated.");
 		//LogA("PairId", static_cast<SDK::AAJBInGameCharacterBase*>(Pointers::Player()->Character)->PairID.ToString());
 	}
-	else if (StrCommand == "trydedicated")
+	/*else if (StrCommand == "trydedicated")
 	{
 		AJB::DedicatedServerLoop();
 		//AJB::CreateCallbackTimer(AJB::DedicatedServerLoop, 0.0f);
-	}
-	else if (StrCommand == "partner")
+	}*/
+	else if (StrCommand == "kit")
 	{
-		//((SDK::AAJBInGameCharacter*)(Pointers::Player()->Player))->SetPairID(AJB::IsServer() ? AJB::Instance->MatchingPlayers[1].First : AJB::Instance->MatchingPlayers[0].First);
-	}
-	/*else if (StrCommand == "isserver")
-	{
-		if (AJB::Settings)
-		{			
-			bool bToggle = AJB::Settings->UpdateSettings.bIsServerMode;
-			AJB::Settings->SetUpdateServerMode(GWorld.GetPointer(), !bToggle);
-			ConsoleOutput::Text(L"Toggling IsServer, the output is: " + std::to_wstring(!bToggle));
-		}		
-	}
-	else if (StrCommand == "storm")
-	{
+		static bool bToggle{ 0 };
+		static std::vector<std::pair<SDK::UBP_AJBSkillBase_C*, int32>> OriginalDamageValues;
+		bToggle = !bToggle;
 
-		SDK::UBP_AJBDamageAreaLocal_C* Storm = Pointers::SpawnActor<SDK::UBP_AJBDamageAreaLocal_C>();
-		if (Storm)
+		SDK::ABP_AJBInGameCharacter_C* Character = Pointers::Character<SDK::ABP_AJBInGameCharacter_C>();
+		if (Character)
 		{
-			LogA("Storm Actor", Storm->GetFullName());
-		}
-		
-		SDK::ABP_AJBBattleGameMode_C* GameMode = AJB::GetGameMode<SDK::ABP_AJBBattleGameMode_C>();
-		if (GameMode)
-		{
-
-			SDK::ABP_AJBBattleGameState_C* GameState = static_cast<SDK::ABP_AJBBattleGameState_C*>(GameMode->GameState);
-			if (!GameState->BP_AJBDamageAreaLocal)
+			if (bToggle)
 			{
-				SDK::UBP_AJBDamageAreaLocal_C* Storm = Pointers::SpawnActor<SDK::UBP_AJBDamageAreaLocal_C>();
-				if (Storm)
-				{
-					GameState->BP_AJBDamageAreaLocal = Storm;
-				}
+				Character->ROS_DebugSPMax();
+				Character->ROS_DebugAPMax();
+				Character->DebugAutoFullMP_On();
+			}
+			else
+			{
+				Character->DebugAutoFullMP_Off();
 			}
 		}
-	}*/
 
+		if (SDK::APlayerController* PC = A8CL::Pointers::Player())
+		{
+			for (SDK::UBP_AJBSkillBase_C* Skill : A8CL::Pointers::FindObjects<SDK::UBP_AJBSkillBase_C>(false))
+				if (Skill && Skill->Outer == PC->AcknowledgedPawn)
+				{
+					if (bToggle) { OriginalDamageValues.push_back({ Skill, Skill->Damage }); Skill->Damage += 100; }
+					else { for (auto& [S, Val] : OriginalDamageValues) if (S == Skill) { Skill->Damage = Val; break; } }
+				}
+			if (!bToggle) OriginalDamageValues.clear();
+		}
+		bToggle ? ConsoleOutput::Text(L"Kit on") : ConsoleOutput::Text(L"Kit off.");
+	}	
+	else if (StrCommand == "melee")
+	{
+		static bool bToggle{ 0 };
+		static std::vector<std::pair<SDK::UBP_AJBCloseRangeSkill_C*, float>> OriginalRangeValues;
+		static std::vector<std::pair<SDK::UBP_AJBCloseRangeSkill_C*, float>> OriginalHitWait;
+		bToggle = !bToggle;
+
+		if (SDK::APlayerController* PC = A8CL::Pointers::Player())
+		{
+			for (SDK::UBP_AJBCloseRangeSkill_C* Skill : A8CL::Pointers::FindObjects<SDK::UBP_AJBCloseRangeSkill_C>(false))
+			{
+				if (!Skill || !Skill->Outer) continue;
+				if (Skill->Outer == PC->AcknowledgedPawn)
+				{
+					if (bToggle)
+					{
+						OriginalRangeValues.push_back({ Skill, Skill->AttackRange_cm_ }); Skill->AttackRange_cm_ += 200.f;
+						OriginalHitWait.push_back({ Skill, Skill->HitWaitTime }); Skill->HitWaitTime *= 0.5f;
+					}
+					else
+					{
+						for (auto& [S, Val] : OriginalRangeValues) if (S == Skill) { Skill->AttackRange_cm_ = Val; break; }
+						for (auto& [S, Val] : OriginalHitWait) if (S == Skill) { Skill->HitWaitTime = Val; break; }
+					}
+				}
+			}
+			if (!bToggle) { OriginalRangeValues.clear(); OriginalHitWait.clear(); }
+		}
+		bToggle ? ConsoleOutput::Text(L"melee on") : ConsoleOutput::Text(L"melee off.");
+	}	
+	else if (StrCommand == "uses")
+	{
+		static bool bToggle{ 0 };
+		static std::vector<std::pair<SDK::UBP_AJBSkillBase_C*, int32>> OriginalUses;
+		bToggle = !bToggle;
+
+		if (SDK::APlayerController* PC = A8CL::Pointers::Player())
+		{
+			for (SDK::UBP_AJBSkillBase_C* Skill : A8CL::Pointers::FindObjects<SDK::UBP_AJBSkillBase_C>(false))
+				if (Skill && Skill->Outer == PC->AcknowledgedPawn)
+				{
+					if (bToggle) { OriginalUses.push_back({ Skill, Skill->LeftUseNum }); Skill->LeftUseNum = 100; }
+					else { for (auto& [S, Val] : OriginalUses) if (S == Skill) { Skill->LeftUseNum = Val; break; } }
+				}
+			if (!bToggle) OriginalUses.clear();
+		}
+		bToggle ? ConsoleOutput::Text(L"uses on") : ConsoleOutput::Text(L"uses off.");
+		}
+	else if (StrCommand.find("dist ") == 0)
+	{
+		if (StrCommand.length() <= 5) return OFF::ConsoleCommand.VerifyFC<Decl::ConsoleCommand>()(This, Result, Command, bWriteToLog);
+		float NewDist = std::stof(StrCommand.substr(5));
+		if (SDK::APlayerController* PC = A8CL::Pointers::Player())
+		{
+			for (SDK::UBP_AJBPlacementSkill_C* Skill : A8CL::Pointers::FindObjects<SDK::UBP_AJBPlacementSkill_C>(false))
+				if (Skill && Skill->Outer == PC->AcknowledgedPawn)
+					Skill->TraceDistance_cm_ = NewDist;
+		}
+		ConsoleOutput::Text(L"distance set to " + std::to_wstring(NewDist));
+		}
+	else if (StrCommand.find("place ") == 0)
+	{
+		if (StrCommand.length() <= 6) return OFF::ConsoleCommand.VerifyFC<Decl::ConsoleCommand>()(This, Result, Command, bWriteToLog);
+		int32 NewLimit = std::stoi(StrCommand.substr(6));
+
+		if (SDK::APlayerController* PC = A8CL::Pointers::Player())
+		{
+			for (SDK::UBP_AJBPlacementSkill_C* Skill : A8CL::Pointers::FindObjects<SDK::UBP_AJBPlacementSkill_C>(false))
+				if (Skill && Skill->Outer == PC->AcknowledgedPawn)
+					Skill->IncreasePlacementLimit(NewLimit);
+		}
+		ConsoleOutput::Text(L"placement increased by " + std::to_wstring(NewLimit));
+	}
+	else if (StrCommand == "range")
+	{
+		static bool bToggle{ 0 };
+		static std::vector<std::pair<SDK::UBP_AJBSeparateSkill_C*, float>> OriginalSeparateValues;
+		bToggle = !bToggle;
+
+		if (SDK::APlayerController* PC = A8CL::Pointers::Player())
+		{
+			for (SDK::ABP_AJBInGameMovableStand_C* Stand : A8CL::Pointers::FindObjects<SDK::ABP_AJBInGameMovableStand_C>(false))
+				if (Stand && Stand->Owner == PC->AcknowledgedPawn)
+				{
+					Stand->LimitBeginLeaveRate = bToggle ? 20.5f : 0.9f; break;
+				}
+
+			for (SDK::UBP_AJBSeparateSkill_C* Skill : A8CL::Pointers::FindObjects<SDK::UBP_AJBSeparateSkill_C>(false))
+				if (Skill && Skill->Outer == PC->AcknowledgedPawn)
+				{
+					if (bToggle) { OriginalSeparateValues.push_back({ Skill, Skill->s_ }); Skill->s_ = 0.5f; }
+					else { for (auto& [S, Val] : OriginalSeparateValues) if (S == Skill) { Skill->s_ = Val; break; } }
+				}
+
+			if (!bToggle) OriginalSeparateValues.clear();
+		}
+		bToggle ? ConsoleOutput::Text(L"range kit on") : ConsoleOutput::Text(L"range kit off.");
+	}	
 	//LogA("ConsoleCommand", std::format("[Owning PlayerController]: {} | [Command]: {}", This->GetFullName(), StrCommand));
 
 	return OFF::ConsoleCommand.VerifyFC<Decl::ConsoleCommand>()(This, Result, Command, bWriteToLog);

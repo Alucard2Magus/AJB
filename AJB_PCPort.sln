@@ -1,0 +1,22 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AJB PC Port", "JoJo.vcxproj", "{68C3D0CD-4F62-4156-88E0-72E3A5A0A9B7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Injectable|x64 = Injectable|x64
+		Proxy|x64 = Proxy|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68C3D0CD-4F62-4156-88E0-72E3A5A0A9B7}.Injectable|x64.ActiveCfg = Injectable|x64
+		{68C3D0CD-4F62-4156-88E0-72E3A5A0A9B7}.Injectable|x64.Build.0 = Injectable|x64
+		{68C3D0CD-4F62-4156-88E0-72E3A5A0A9B7}.Proxy|x64.ActiveCfg = Proxy|x64
+		{68C3D0CD-4F62-4156-88E0-72E3A5A0A9B7}.Proxy|x64.Build.0 = Proxy|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
